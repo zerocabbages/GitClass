@@ -1,0 +1,6 @@
+Task 9 Observations
+
+1. Both insersion and values are updated into the table after commit, as it's an InnoDB engine which is a trnsactional SE.
+2. An update and delete request are executed and also a rollback is executed, as rollback works in InnoDB engine as it is transactional SE.(Which can only read.)
+3. Delete command is executed and rollback isn't successful as dept table is an MyISAM which is non-transactional SE.
+4. Update, insersion and rollback, all are successfully executed as emp table is an InnoDb which is a transactional SE.
